@@ -57,7 +57,7 @@ body {
     font-style: inherit;
 }
 .section-title{
-    font-family:var(--main-font);
+        font-family:var(--main-font);
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -145,6 +145,7 @@ color: #2196F3;
     color: var(--main-title-color);
 }
 .hero-button {
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
