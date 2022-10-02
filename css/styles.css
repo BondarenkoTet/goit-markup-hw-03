@@ -44,14 +44,17 @@ ul, ol {
     padding-left: 0;
     }
 
-button {
-    cursor: pointer;
-}
 address {
     font-style: normal;
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -78,9 +81,6 @@ body {
 .link {
     text-decoration: none;
 }
-.address{
-    font-style: inherit;
-}
 .hero-button{
     font-style: inherit;
 }
@@ -96,7 +96,6 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
     margin: 0 auto;
 }
 
@@ -156,7 +155,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    padding: 15px;
     
 } 
 
@@ -182,7 +180,8 @@ color: #2196F3;
     color: #757575;
     display: flex;
     margin-right: 0;
-    justify-content: flex-end;
+    margin-left: auto;
+    gap: 50px;
     
 }
 
@@ -211,7 +210,6 @@ color: #2196F3;
     margin: 0 auto;
     max-width: 696px;
     margin-bottom: 30px;
-    padding-top: 200px;
 }
 .hero-button {
     font-family: var(--main-font);
@@ -226,7 +224,8 @@ color: #2196F3;
     cursor: pointer;
     color: #FFFFFF;
     background: var(--accent-color);
-    margin-right: 0;
+    border-radius: 4px;
+    padding: 12px 32px;
     
 }
 
@@ -234,8 +233,6 @@ color: #2196F3;
 
 /* --------ABOUT------- */
 .about {
-    display: flex;
-    align-items: center;
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -274,12 +271,11 @@ color: #2196F3;
 .team-title {
     color: var(--second-title-color);
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 
 .portfolio-list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 img {
     display: block;
@@ -301,13 +297,16 @@ img {
     gap: 30px;
 }
 .team-item {
+    background: #FFFFFF;
+        /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     width: calc((100%-60px)/3);
 }
 .team-item-content {
     padding-top: 30px;
     padding-bottom: 30px;
-    border-bottom-style: solid ;
-    border-radius: 0px 0px 4px 4px;
+    
 }
 
 
@@ -343,6 +342,11 @@ img {
 
 .footer {
     background-color: #2F303A;
+    padding: 60px 0;
+}
+.address {
+    font-style: normal;
+    margin-top: 20px;
 }
 
 .footer-link-adres {
@@ -361,15 +365,22 @@ img {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-item:last-child {
+    margin-bottom: 0;
+
+}
 
 /*---------PORTFOLIO--------*/
 
     /*-----SELECTION------  */
+
+    .selection {
+        padding: 94px 0;
+    }
 .selection-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
 }
 .selection-button {
     font-family: inherit;
@@ -383,8 +394,10 @@ img {
     color: #212121;
     background: #F5F4FA;
     cursor: pointer;
+    background: #2196F3;
+        /* shadow-middle */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    margin-right: 8px;
 }
 
 .selection-button:hover {
@@ -400,6 +413,7 @@ img {
         /* identical to box height, or 200% */
         letter-spacing: 0.06em;
         color: #212121;
+        margin-bottom: 4px;
 }
 
 .selection-text {
@@ -420,5 +434,5 @@ img {
 }
 .selection-card {
     padding: 20px 24px;
-    background: #FFFFFF;
+    border: 1px solid;
 }
